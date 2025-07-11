@@ -131,8 +131,13 @@
             if (photoFilename) {
                 // Construct photo path based on program
                 
-                const programFolder = program === "MIRS" ? "MIRS" : program;
-                photoPath = `data/images/${programFolder}/${photoFilename}`;
+            if (photoFilename) {
+            const [programRoot] = program.split(" "); // e.g., "MIRS" or "IFROS"
+            const folderPath = `data/images/${programRoot}/${program}`; // e.g., data/images/MIRS/MIRS 4
+            photoPath = `${folderPath}/${photoFilename}`;
+}
+
+
             }
 
             const studentEntry = {
