@@ -166,5 +166,18 @@
   "info": "Engineer in Automation & Industrial Computing",
   "linkedin": "https://www.linkedin.com/in/adel-saidani-710a13285/",
   "program": "MIRS 4"
+},
+
+{
+  "name": "ALAN LIMBERT USTARIZ ZERDA",
+  "country": "Bolivia",
+  "coordinates": [
+    -16.8219298,
+    -65.5166066
+  ],
+  "photo": "data/images/MIRS/MIRS 3/52.jpg",
+  "info": "",
+  "linkedin": "",
+  "program": "MIRS 3"
 }
   ]
