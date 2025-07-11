@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIFROS Student Map</title>
+  <link rel="icon" type="image/png" href="data/images/favicon.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <!-- Leaflet.markercluster CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+</head>
+<body>
+
+  <div class="controls">
+    <label for="program-filter">Filter by batch:</label>
+    <select id="program-filter">
+      <option value="all">All batches</option>
+      <!-- <option value="MIRS">MIRS</option> -->
+      <option value="MIRS 1">MIRS 1</option>
+      <option value="MIRS 2">MIRS 2</option>
+      <option value="MIRS 3">MIRS 3</option>
+      <option value="MIRS 4">MIRS 4</option>
+    </select>
+
+
+    <label for="country-filter">Filter by Country:</label>
+    <select id="country-filter">
+      <option value="all">All Countries</option>
+      <!-- Countries will be populated by JavaScript -->
+    </select>
+  </div>
+
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Leaflet.markercluster JS -->
+  <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

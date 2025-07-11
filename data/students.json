@@ -1,0 +1,170 @@
+[
+{
+  "name": "Alex Gasser",
+  "country": "Belgium",
+  "coordinates": [
+    51.2597911,
+    4.3439691
+  ],
+  "photo": "data/images/MIRS/MIRS 4/4.jpg",
+  "info": "",
+  "linkedin": "https://www.linkedin.com/in/alex-gasser-801709272/",
+  "program": "MIRS 4"
+},
+{
+  "name": "Enis Hidri",
+  "country": "Italy",
+  "coordinates": [
+    43.9233432,
+    10.9024837
+  ],
+  "photo": "data/images/MIRS/MIRS 4/7.jpg",
+  "info": "",
+  "linkedin": "https://www.linkedin.com/in/enis-hidri-31295b172/",
+  "program": "MIRS 4"
+},
+{
+  "name": "Taqi Hamoda",
+  "country": "Canada",
+  "coordinates": [
+    43.6286032,
+    -79.4852717
+  ],
+  "photo": "data/images/MIRS/MIRS 4/14.jpg",
+  "info": "Software Developer",
+  "linkedin": "https://www.linkedin.com/in/taqi-hamoda/",
+  "program": "MIRS 4"
+},
+{
+  "name": "Mohamed Khalid Alhosani",
+  "country": "United Arab Emirates",
+  "coordinates": [
+    25.2647227,
+    55.2924146
+  ],
+  "photo": "data/images/MIRS/MIRS 4/8.jpg",
+  "info": "",
+  "linkedin": "",
+  "program": "MIRS 4"
+},
+{
+  "name": "Mohamed Alhammadi",
+  "country": "United Arab Emirates",
+  "coordinates": [
+    25.2647227,
+    55.2924146
+  ],
+  "photo": "data/images/MIRS/MIRS 4/10.jpg",
+  "info": "",
+  "linkedin": "",
+  "program": "MIRS 4"
+},
+{
+  "name": "Salim Abdallah Alblooshi",
+  "country": "United Arab Emirates",
+  "coordinates": [
+    25.2647227,
+    55.2924146
+  ],
+  "photo": "data/images/MIRS/MIRS 4/13.jpg",
+  "info": "",
+  "linkedin": "",
+  "program": "MIRS 4"
+},
+{
+  "name": "Ammar Abdulla",
+  "country": "United Arab Emirates",
+  "coordinates": [
+    25.2647227,
+    55.2924146
+  ],
+  "photo": "data/images/MIRS/MIRS 4/5.jpg",
+  "info": "",
+  "linkedin": "https://www.linkedin.com/in/ammar-abdulla-247228247/",
+  "program": "MIRS 4"
+},
+{
+  "name": "Abdulla Aljaberi",
+  "country": "United Arab Emirates",
+  "coordinates": [
+    25.2647227,
+    55.2924146
+  ],
+  "photo": "data/images/MIRS/MIRS 4/1.jpg",
+  "info": "",
+  "linkedin": "",
+  "program": "MIRS 4"
+},
+{
+  "name": "Mahra Khalil Alhosani",
+  "country": "United Arab Emirates",
+  "coordinates": [
+    25.2647227,
+    55.2924146
+  ],
+  "photo": "data/images/MIRS/MIRS 4/9.jpg",
+  "info": "",
+  "linkedin": "",
+  "program": "MIRS 4"
+},
+{
+  "name": "Abdulrahman Hasan Ahmed Hasan",
+  "country": "United Arab Emirates",
+  "coordinates": [
+    25.2647227,
+    55.2924146
+  ],
+  "photo": "data/images/MIRS/MIRS 4/2.jpg",
+  "info": "",
+  "linkedin": "",
+  "program": "MIRS 4"
+},
+{
+  "name": "Pau Gardela Giménez",
+  "country": "Spain",
+  "coordinates": [
+    41.3825802,
+    2.177073
+  ],
+  "photo": "data/images/MIRS/MIRS 4/11.jpg",
+  "info": "Mechatronics engineer",
+  "linkedin": "https://www.linkedin.com/in/pau-gardela-gim%C3%A9nez-babb2a313/",
+  "program": "MIRS 4"
+},
+{
+  "name": "Ryan Crowell",
+  "country": "United states",
+  "coordinates": [
+    45.6306954,
+    -122.6744557
+  ],
+  "photo": "data/images/MIRS/MIRS 4/12.jpg",
+  "info": "Mechanical Engineer",
+  "linkedin": "https://www.linkedin.com/in/ryan-crowell-323531204/",
+  "program": "MIRS 4"
+},
+{
+  "name": "David Arméstar Rodrigo",
+  "country": "Spain",
+  "coordinates": [
+    41.3825802,
+    2.177073
+  ],
+  "photo": "data/images/MIRS/MIRS 4/6.jpg",
+  "info": "",
+  "linkedin": "https://www.linkedin.com/in/david-arm%C3%A9star-rodrigo-1757472b4/",
+  "program": "MIRS 4"
+},
+{
+  "name": "Adel Saidani",
+  "country": "Algeria",
+  "coordinates": [
+    34.881789,
+    -1.316699
+  ],
+  "photo": "data/images/MIRS/MIRS 4/3.jpg",
+  "info": "Engineer in Automation & Industrial Computing",
+  "linkedin": "https://www.linkedin.com/in/adel-saidani-710a13285/",
+  "program": "MIRS 4"
+}
+  ]

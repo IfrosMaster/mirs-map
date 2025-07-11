@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data Entry Helper</title>
+    <link rel="icon" type="image/png" href="data/images/favicon.png">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }
+        .container { background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        label { display: block; margin-top: 15px; margin-bottom: 5px; font-weight: bold; }
+        input[type="text"], input[type="url"], select, textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #019c9e;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        button:hover { background-color: #222e5b; }
+        #outputJson { width: 100%; height: 200px; font-family: monospace; margin-top:10px; }
+        .error { color: red; font-weight: bold; }
+        .note { font-size: 0.9em; color: #555; }
+        .photo-path-hint { font-size: 0.8em; color: #777; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Student Data Entry Helper</h1>
+    <p class="note">Fill in the details below. City and Country will be used to find coordinates.</p>
+
+    <label for="name">Student Name:</label>
+    <input type="text" id="name" placeholder="e.g., Jane Doe">
+
+    <label for="city">City:</label>
+    <input type="text" id="city" placeholder="e.g., Paris">
+
+    <label for="country">Country:</label>
+    <input type="text" id="country" placeholder="e.g., France">
+
+    <label for="program">Program:</label>
+    <select id="program">
+        <!-- <option value="MIRS">MIRS</option> -->
+        <option value="MIRS 1">MIRS 1</option>
+        <option value="MIRS 2">MIRS 2</option>
+        <option value="MIRS 3">MIRS 3</option>
+        <option value="MIRS 4">MIRS 4</option>
+    </select>
+
+    <label for="photo">Photo Filename (e.g., JaneDoe.jpg):</label>
+    <input type="text" id="photo" placeholder="e.g., JaneDoe.jpg or leave blank for default">
+    <div class="photo-path-hint">
+        If a photo is provided, it will be placed in `data/images/PROGRAM_NAME/`. <br>
+        Example: If program is MIRS and filename is `JaneDoe.jpg`, path will be `data/images/MIRS/JaneDoe.jpg`. <br>
+        Ensure the image file is uploaded to the correct folder on the NAS.
+    </div>
+
+
+    <label for="info">Additional Info:</label>
+    <input type="text" id="info" placeholder="e.g., Bachelor in Robotics">
+
+    <label for="linkedin">LinkedIn Profile URL:</label>
+    <input type="url" id="linkedin" placeholder="e.g., https://linkedin.com/in/janedoe">
+
+    <button onclick="generateStudentJson()">Generate Student JSON</button>
+
+    <p id="status" style="margin-top:15px;"></p>
+
+    <label for="outputJson">Generated JSON (Copy this into students.json):</label>
+    <textarea id="outputJson" readonly></textarea>
+</div>
+
+<script>
+    async function generateStudentJson() {
+        const name = document.getElementById('name').value.trim();
+        const city = document.getElementById('city').value.trim();
+        const countryInput = document.getElementById('country').value.trim();
+        const program = document.getElementById('program').value;
+        const photoFilename = document.getElementById('photo').value.trim();
+        const info = document.getElementById('info').value.trim();
+        const linkedin = document.getElementById('linkedin').value.trim();
+        const outputJsonTextarea = document.getElementById('outputJson');
+        const statusP = document.getElementById('status');
+
+        outputJsonTextarea.value = ''; // Clear previous output
+        statusP.textContent = 'Processing...';
+        statusP.className = '';
+
+        if (!name || !city || !countryInput || !program) {
+            statusP.textContent = 'Error: Name, City, Country, and Program are required.';
+            statusP.className = 'error';
+            return;
+        }
+
+        try {
+            // Geocode using Nominatim
+            // User-Agent is polite and sometimes required by Nominatim's usage policy.
+            const response = await fetch(`https://nominatim.openstreetmap.org/search?city=${encodeURIComponent(city)}&country=${encodeURIComponent(countryInput)}&format=json&limit=1`, {
+                headers: {
+                    'User-Agent': 'StudentMapDataEntryTool/1.0 (YourEmailOrProjectURL)' // Be polite
+                }
+            });
+
+            if (!response.ok) {
+                throw new Error(`Nominatim API request failed: ${response.statusText}`);
+            }
+
+            const geocodeData = await response.json();
+
+            if (!geocodeData || geocodeData.length === 0) {
+                statusP.textContent = `Error: Could not find coordinates for ${city}, ${countryInput}. Please check spelling or try a larger nearby city.`;
+                statusP.className = 'error';
+                return;
+            }
+
+            const lat = parseFloat(geocodeData[0].lat);
+            const lon = parseFloat(geocodeData[0].lon);
+
+            let photoPath = "";
+            if (photoFilename) {
+                // Construct photo path based on program
+                
+                const programFolder = program === "MIRS" ? "MIRS" : program;
+                photoPath = `data/images/${programFolder}/${photoFilename}`;
+            }
+
+            const studentEntry = {
+                name: name,
+                country: geocodeData[0].address?.country || countryInput, // Use country from Nominatim if available, else input
+                coordinates: [lat, lon],
+                photo: photoPath,
+                info: info,
+                linkedin: linkedin,
+                program: program
+            };
+
+            outputJsonTextarea.value = JSON.stringify(studentEntry, null, 2) + ","; // Add comma for easy pasting
+            statusP.textContent = 'JSON generated successfully! Copy the text below and add it to your students.json file (usually inside the main array []). Remember to remove the trailing comma from the VERY LAST student object in the file.';
+            statusP.className = 'success'; // You can add a .success class for green text if you like
+
+        } catch (error) {
+            console.error('Error:', error);
+            statusP.textContent = `Error: ${error.message}. Check the console for more details.`;
+            statusP.className = 'error';
+        }
+    }
+</script>
+
+</body>
+</html>
