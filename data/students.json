@@ -179,5 +179,29 @@
   "info": "",
   "linkedin": "",
   "program": "MIRS 3"
+},
+{
+  "name": "Oumaima Charia",
+  "country": "Morocco",
+  "coordinates": [
+    34.0218454,
+    -6.8408929
+  ],
+  "photo": "",
+  "info": "",
+  "linkedin": "https://www.linkedin.com/in/oumaima-charia-547919255/",
+  "program": "MIRS 2"
+},
+{
+  "name": "Miguel Malagon Pedrosa",
+  "country": "Spain",
+  "coordinates": [
+    41.9793006,
+    2.8199439
+  ],
+  "photo": "",
+  "info": "",
+  "linkedin": "https://www.linkedin.com/in/miguel-malag%C3%B3n-pedrosa-6b2296139/",
+  "program": "MIRS 2"
 }
   ]
