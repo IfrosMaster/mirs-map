@@ -1,5 +1,53 @@
 [
 {
+    "name": "Elchin Aslanli",
+    "country": "Azerbaijan",
+    "coordinates": [
+      40.409264,
+      49.867092
+    ],
+    "photo": "data/images/MIRS/MIRS 5/Aslanli.JPG",
+    "info": "Bachelor in Control and Automation Engineering",
+    "linkedin": "https://www.linkedin.com/in/elchinaslanli/",
+    "program": "MIRS 5"
+  },
+  {
+    "name": "Houssam Korib",
+    "country": "Algeria",
+    "coordinates": [
+      34.87833,
+      -1.315
+    ],
+    "photo": "data/images/MIRS/MIRS 5/Korib.JPG",
+    "info": "Bachelor in Automation",
+    "linkedin": "https://www.linkedin.com/in/houssem-korib-a85bb1344/",
+    "program": "MIRS 5"
+  },
+  {
+    "name": "Julia Jessica Hulleman",
+    "country": "The Netherlands",
+    "coordinates": [
+      41.8472742,
+      3.1026026
+    ],
+    "photo": "data/images/MIRS/MIRS 5/Hulleman.JPG",
+    "info": "Bachelor in Marine Sciences and Technologies",
+    "linkedin": "https://www.linkedin.com/in/julia-jessica-hulleman-26066b2b0/",
+    "program": "MIRS 5"
+  },
+  {
+    "name": "Umut Caliskan",
+    "country": "Turkey",
+    "coordinates": [
+      39.9334,
+      32.8597
+    ],
+    "photo": "data/images/MIRS/MIRS 5/Caliskan.JPG",
+    "info": "Bachelor in Mathematics",
+    "linkedin": "https://www.linkedin.com/in/umutcaliskan/",
+    "program": "MIRS 5"
+  },
+{
   "name": "Alex Gasser",
   "country": "Belgium",
   "coordinates": [
