@@ -251,5 +251,158 @@
   "info": "Bachelor of Science in Computer Engineering",
   "linkedin": "https://www.linkedin.com/in/miguel-malag%C3%B3n-pedrosa-6b2296139/",
   "program": "MIRS 2"
+},
+{
+  "name": "Antonio Jose Sandoval Hurtado",
+  "country": "Peru",
+  "coordinates": [-6.8699697, -75.0458514],
+  "photo": "",
+  "info": "Bachiller en Ciencias con mención en Ingeniería Mecatrónica",
+  "linkedin": "",
+  "program": "MIRS 6"
+},
+{
+  "name": "Damian Troisch",
+  "country": "Germany",
+  "coordinates": [51.1638175, 10.4478313],
+  "photo": "data/images/MIRS/MIRS 6/Damian_Troisch_Germany.jpg",
+  "info": "Bachelor of Computer Science (Advanced)",
+  "linkedin": "https://www.linkedin.com/in/damiantroisch/",
+  "program": "MIRS 6"
+},
+{
+  "name": "David Juncà i Roura",
+  "country": "Spain",
+  "coordinates": [39.3260685, -4.8379791],
+  "photo": "data/images/MIRS/MIRS 6/David_Junca_Espanya.jpg",
+  "info": "Grau en Enginyeria Informàtica",
+  "linkedin": "https://www.linkedin.com/in/davidjuncaroura/",
+  "program": "MIRS 6"
+},
+{
+  "name": "Giripirasath Rajanbabu",
+  "country": "India",
+  "coordinates": [22.3511148, 78.6677428],
+  "photo": "data/images/MIRS/MIRS 6/Giriprasath_Rajanbabu_India.jpg",
+  "info": "Bachelor of Engineering in Electronics and Communication Engineering",
+  "linkedin": "https://www.linkedin.com/in/giriprasath-r-620b58230?trk=contact-info",
+  "program": "MIRS 6"
+},
+{
+  "name": "Haoyu Ai",
+  "country": "China",
+  "coordinates": [34.5412245, 108.923707],
+  "photo": "data/images/MIRS/MIRS 6/Haoyu_Ai_China.jpg",
+  "info": "Communication Engineering",
+  "linkedin": "",
+  "program": "MIRS 6"
+},
+{
+  "name": "Harjot Singh Bhatti",
+  "country": "India",
+  "coordinates": [22.3511148, 78.6677428],
+  "photo": "data/images/MIRS/MIRS 6/Harjot_Singh_India.png",
+  "info": "B.Tech in Mechatronics",
+  "linkedin": "https://www.linkedin.com/in/harjotsinghbhatti/",
+  "program": "MIRS 6"
+},
+{
+  "name": "Jerin Jose",
+  "country": "India",
+  "coordinates": [22.3511148, 78.6677428],
+  "photo": "data/images/MIRS/MIRS 6/Jerin_Jose_India.jpg",
+  "info": "B.Tech Mechatronics Engineering",
+  "linkedin": "https://www.linkedin.com/in/jerinj13/",
+  "program": "MIRS 6"
+},
+{
+  "name": "Jordi Sanchez Martori",
+  "country": "Spain",
+  "coordinates": [39.3260685, -4.8379791],
+  "photo": "data/images/MIRS/MIRS 6/Jordi_Sanchez_Espanya.jpg",
+  "info": "Grau en Enginyeria mecatrònica",
+  "linkedin": "https://www.linkedin.com/in/jordi-s%C3%A0nchez-504735305/",
+  "program": "MIRS 6"
+},
+{
+  "name": "Marc Tanous Pinto",
+  "country": "Spain",
+  "coordinates": [39.3260685, -4.8379791],
+  "photo": "data/images/MIRS/MIRS 6/Marc_Tanous_Espanya.jpg",
+  "info": "Grau en Enginyeria en Tecnologies Industrials",
+  "linkedin": "",
+  "program": "MIRS 6"
+},
+{
+  "name": "Maria Lazar",
+  "country": "Romania",
+  "coordinates": [45.9852129, 24.6859225],
+  "photo": "data/images/MIRS/MIRS 6/Maria_Lazar_Romania.jpg",
+  "info": "Information Engineering",
+  "linkedin": "https://www.linkedin.com/in/maria-lazar-801395313/",
+  "program": "MIRS 6"
+},
+{
+  "name": "Martí Fos Balaguer",
+  "country": "Spain",
+  "coordinates": [39.3260685, -4.8379791],
+  "photo": "data/images/MIRS/MIRS 6/Marti_Fos_Espanya.jpg",
+  "info": "Grau en Ciències i Tecnologies del Mar",
+  "linkedin": "https://www.linkedin.com/in/mart%C3%AD-fos-balaguer/",
+  "program": "MIRS 6"
+},
+{
+  "name": "Maxs George Edgardo Simmonds Wagemann",
+  "country": "Chile",
+  "coordinates": [-31.7613365, -71.3187697],
+  "photo": "data/images/MIRS/MIRS 6/Maxs_Simmonds_Xile.jpg",
+  "info": "Ingeniería de Ejecución en Computación e Informática",
+  "linkedin": "https://www.linkedin.com/in/maxs-simmonds/",
+  "program": "MIRS 6"
+},
+{
+  "name": "Núria Vilches Baldonado",
+  "country": "Spain",
+  "coordinates": [39.3260685, -4.8379791],
+  "photo": "data/images/MIRS/MIRS 6/Nuria_Vilches_Espanya.jpg",
+  "info": "Grau en Matemàtiques",
+  "linkedin": "https://www.linkedin.com/in/nuria-vilches/",
+  "program": "MIRS 6"
+},
+{
+  "name": "Osama Mohamed Magzoub Gariballa",
+  "country": "Malaysia",
+  "coordinates": [4.5693754, 102.2656823],
+  "photo": "data/images/MIRS/MIRS 6/Osama_Mohamed_Sudan.jpg",
+  "info": "Bachelor of Mechatronics Engineering With Honours",
+  "linkedin": "https://www.linkedin.com/in/osama-gariballa/",
+  "program": "MIRS 6"
+},
+{
+  "name": "Roc Pradell Alarcón",
+  "country": "Spain",
+  "coordinates": [39.3260685, -4.8379791],
+  "photo": "data/images/MIRS/MIRS 6/Roc_Pradell_Espanya.jpg",
+  "info": "Grau en Ciències i Tecnologies del Mar",
+  "linkedin": "https://www.linkedin.com/in/roc-pradell-alarc%C3%B3n-a46aa8243/",
+  "program": "MIRS 6"
+},
+{
+  "name": "Samuel Bower",
+  "country": "United States",
+  "coordinates": [39.7837304, -100.445882],
+  "photo": "data/images/MIRS/MIRS 6/Samuel_Bower_EUA_Sweden.jpg",
+  "info": "Electrical/Electronic Engineering",
+  "linkedin": "",
+  "program": "MIRS 6"
+},
+{
+  "name": "Zhenqi Yang",
+  "country": "China",
+  "coordinates": [34.5412245, 108.923707],
+  "photo": "data/images/MIRS/MIRS 6/Zhenqi_Yang_China.png",
+  "info": "Master in Computer Science",
+  "linkedin": "",
+  "program": "MIRS 6"
 }
   ]
